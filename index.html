@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Febin E J | Senior Software Engineer</title>
+
+<style>
+:root {
+  --bg:#f8fafc; --card:#ffffff; --text:#334155;
+  --primary:#0f172a; --accent:#2563eb;
+}
+[data-theme="dark"] {
+  --bg:#020617; --card:#020617; --text:#e5e7eb;
+  --primary:#e5e7eb; --accent:#60a5fa;
+}
+body {
+  margin:0; font-family:Segoe UI, Arial, sans-serif;
+  background:var(--bg); color:var(--text); line-height:1.7;
+}
+header {
+  background:linear-gradient(135deg,#0f172a,#1e293b);
+  color:#fff; text-align:center; padding:90px 20px;
+}
+header h1 { font-size:2.8rem; margin:0 }
+header p { opacity:.9 }
+header a { color:#93c5fd; margin:0 10px; font-weight:600; text-decoration:none }
+button {
+  margin-top:20px; padding:12px 22px;
+  border:none; border-radius:30px;
+  background:var(--accent); color:#fff;
+  font-size:1rem; cursor:pointer;
+}
+section { max-width:1100px; margin:auto; padding:60px 20px }
+.card {
+  background:var(--card); padding:35px;
+  border-radius:14px;
+  box-shadow:0 15px 30px rgba(0,0,0,.08);
+  margin-bottom:35px;
+}
+h2 { color:var(--primary); margin-bottom:20px }
+.skills {
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:14px
+}
+.skill {
+  background:#eef2ff; padding:12px;
+  border-radius:10px; text-align:center;
+  font-weight:600; color:#1e40af;
+}
+[data-theme="dark"] .skill { background:#020617; color:#93c5fd }
+ul { padding-left:20px }
+footer {
+  background:#020617; color:#94a3b8;
+  text-align:center; padding:25px
+}
+.toggle {
+  position:fixed; top:20px; right:20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="toggle">
+<button onclick="toggleTheme()">🌙</button>
+</div>
+
+<header>
+<h1>Febin E J</h1>
+<p>Senior Software Engineer | Java | Spring Boot | Distributed Systems</p>
+<p>
+<a href="https://github.com/Febin1990" target="_blank">GitHub</a> |
+<a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+</p>
+<a href="resume.pdf" download>
+<button>⬇ Download Resume</button>
+</a>
+</header>
+
+<section>
+<div class="card">
+<h2>About Me</h2>
+<p>
+Senior Software Engineer with <strong>7+ years of experience</strong>
+building, optimizing, and supporting <strong>enterprise-scale backend systems</strong>.
+Strong expertise in <strong>Java, Spring Boot, PostgreSQL, messaging systems,
+distributed caching, and production support</strong>.
+</p>
+<p>
+Experienced in handling <strong>high-traffic systems, performance bottlenecks,
+and mission-critical production incidents</strong>. Actively seeking
+<strong>international opportunities</strong>.
+</p>
+</div>
+</section>
+
+<section>
+<div class="card">
+<h2>Technical Skills</h2>
+<div class="skills">
+<div class="skill">Java</div>
+<div class="skill">Spring Boot</div>
+<div class="skill">Spring Cloud</div>
+<div class="skill">Spring Security</div>
+<div class="skill">PostgreSQL</div>
+<div class="skill">RabbitMQ</div>
+<div class="skill">ActiveMQ</div>
+<div class="skill">Hazelcast</div>
+<div class="skill">Docker</div>
+<div class="skill">Jenkins</div>
+<div class="skill">Prometheus</div>
+<div class="skill">Grafana</div>
+<div class="skill">ELK Stack</div>
+<div class="skill">Azure</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="card">
+<h2>Professional Experience</h2>
+<ul>
+<li>Developed and maintained <strong>30+ REST APIs</strong> using Java & Spring Boot.</li>
+<li>Reduced API response time by <strong>35%</strong> through query optimization and caching.</li>
+<li>Resolved <strong>production CPU & memory incidents</strong> in high-availability systems.</li>
+<li>Implemented Hazelcast caching reducing DB load by <strong>40%</strong>.</li>
+<li>Built CI/CD pipelines with Jenkins and Docker.</li>
+</ul>
+</div>
+</section>
+
+<section>
+<div class="card">
+<h2>Key Projects</h2>
+<ul>
+<li>
+<strong>Enterprise Backend Platform</strong><br>
+Spring Boot microservices, PostgreSQL optimization, Spring Security.<br>
+<a href="https://github.com/Febin1990" target="_blank">View Project</a>
+</li><br>
+<li>
+<strong>Messaging & Queue Monitoring</strong><br>
+RabbitMQ with Prometheus & Grafana alerts.<br>
+<a href="https://github.com/Febin1990" target="_blank">View Project</a>
+</li><br>
+<li>
+<strong>Distributed Cache Integration</strong><br>
+Hazelcast cluster improving performance and scalability.
+</li>
+</ul>
+</div>
+</section>
+
+<section>
+<div class="card">
+<h2>Career Objective</h2>
+<p>
+To contribute as a backend or platform engineer in a global organization,
+building scalable, reliable systems while growing in an international
+engineering environment.
+</p>
+</div>
+</section>
+
+<footer>
+© 2026 Febin E J • International Software Engineer Portfolio
+</footer>
+
+<script>
+function toggleTheme(){
+document.body.dataset.theme =
+document.body.dataset.theme === "dark" ? "" : "dark";
+}
+</script>
+
+</body>
+</html>
